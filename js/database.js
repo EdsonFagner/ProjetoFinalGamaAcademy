@@ -1,4 +1,4 @@
-const cursos = [
+let cursos = [
     {
         id: 1,
         titulo: "Criptomoedas",
