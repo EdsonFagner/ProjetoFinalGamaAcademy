@@ -5,10 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Educa Investe</title>
         <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../js/script.js">
-        <link rel="stylesheet" href="../js/database.js">
+        <link rel="stylesheet" href="../css/styleCriar.css">
+        <link rel="stylesheet" href="../css/styleExibir.css">
+        <link rel="stylesheet" href="../css/styleAtualizar.css">
+        <link rel="stylesheet" href="../css/styleDeletar.css">
+        <link rel="stylesheet" href="../css/styleListar.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -19,19 +23,79 @@
                 <div class="menu">
                     <nav>
                         <ul>
-                            <li class="active"><a href="">Inicio</a></li>
-                            <li><a href="">Criar Curso</a></li>
-                            <li><a href="">Exibir Curso</a></li>
-                            <li><a href="">Atualizar Curso</a></li>
-                            <li><a href="">Deletar Curso</a></li>
-                            <li><a href="">Listar Cursos</a></li>
+                            <li><a id="inicio">Inicio</a></li>
+                            <li><a id="criar">Criar Curso</a></li>
+                            <li><a id="exibir">Exibir Curso</a></li>
+                            <li><a id="atualizar">Atualizar Curso</a></li>
+                            <li><a id="deletar">Deletar Curso</a></li>
+                            <li><a id="listar">Listar Cursos</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
         <section id="banner">
-
+            <div class="container column" id="container__principal">
+            </div>
+            <div class="container " id="container__criar">
+                <form method="POST" id="form__criar">
+                    <h1 id="h1__criar">CRIAR UM CURSO</h1>
+                    <label class="criar__title">
+                        <input class="criar__input__title" type="text" name="titulo" placeholder="TÍTULO DO CURSO" autocomplete="off" required/>
+                    </label>
+                    <label class="criar__description">
+                        <input class="criar__input__description" type="text" name="descricao" placeholder="DESCRIÇÃO" autocomplete="off" required/>
+                    </label>
+                    <!--<input accept="image/x-png,image/gif,image/jpeg" required="" type="file" name="photos[]" id="photos"  directory="" webkitdirectory="" mozdirectory="">-->
+                    <label class="criar__name">
+                        <input class="criar__input__name" type="text" name="nomeprofessor" placeholder="NOME DO PROFESSOR" autocomplete="off" required/>
+                    </label>
+                    <button type="submit" class="btn--criar">Criar</button>
+                </form>
+            </div>
+            <div class="container" id="container__exibir">
+                <form method="POST" id="form__exibir">
+                    <h1 id="h1__exibir">EXIBIR DETALHES DO CURSO</h1>
+                    <label class="exibir__id">
+                        <input class="exibir__input__id" type="number" name="id" placeholder="ID DO CURSO" autocomplete="off" required/>
+                    </label>
+                    <button type="submit" class="btn--exibir">Exibir</button>
+                </form>
+            </div>
+            <div class="container" id="container__atualizar">
+                <form method="POST" id="form__atualizar">
+                    <h1 id="h1__atualizar">ATUALIZAR UM CURSO</h1>
+                    <label class="atualizar__id">
+                        <input class="atualizar__input__id" type="number" name="id" placeholder="ID DO CURSO" autocomplete="off" required/>
+                    </label>
+                    <label class="atualizar__title">
+                        <input class="atualizar__input__title" type="text" name="titulo" placeholder="TÍTULO DO CURSO" autocomplete="off" required/>
+                    </label>
+                    <label class="atualizar__description">
+                        <input class="atualizar__input__description" type="text" name="descricao" placeholder="DESCRIÇÃO" autocomplete="off" required/>
+                    </label>
+                    <!--<input accept="image/x-png,image/gif,image/jpeg" required="" type="file" name="photos[]" id="photos"  directory="" webkitdirectory="" mozdirectory="">-->
+                    <label class="atualizar__name">
+                        <input class="atualizar__input__name" type="text" name="nomeprofessor" placeholder="NOME DO PROFESSOR" autocomplete="off" required/>
+                    </label>
+                    <button type="submit" class="btn--atualizar">Atualizar</button>
+                </form>
+            </div>
+            <div class="container" id="container__deletar">
+                <form method="POST" id="form__deletar">
+                    <h1 id="h1__deletar">DELETAR UM CURSO</h1>
+                    <label class="deletar__id">
+                        <input class="deletar__input__id" type="number" name="id" placeholder="ID DO CURSO" autocomplete="off" required/>
+                    </label>
+                    <button type="submit" class="btn--deletar">Deletar</button>
+                </form>
+            </div>
+            <div class="container" id="container__listar">
+                <form method="POST" id="form__listar">
+                    <h1 id="h1__listar">LISTAR TODOS OS CURSOS</h1>
+                    <button type="submit" class="btn--listar">Listar</button>
+                </form>
+            </div>
         </section>
         <aside>
 
@@ -40,4 +104,6 @@
 
         </footer>
     </body>
+    <script type="text/javascript"  src="../js/database.js"></script>
+    <script type="text/javascript" src="../js/app.js"></script>
 </html>

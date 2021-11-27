@@ -5,7 +5,7 @@ let cursos = [
         descricao: "Aprenda sobre criptomoedas com o CTO da Hashdex",
         imagem: "../images/criptomoedas.jpg",
         nomeprofessor: "Samir Kerbage",
-        listaaulas: ""
+        listaaulas: "Clique aqui para acessar as aulas."
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ let cursos = [
         descricao: "Aprenda ciclos de mercados com um dos maiores e mais respeitados gestores do mundo.",
         imagem: "../images/ciclos.jpg",
         nomeprofessor: "Howard Marks",
-        listaaulas: ""
+        listaaulas: "Clique aqui para acessar as aulas."
     },
     {
         id: 3,
@@ -21,8 +21,7 @@ let cursos = [
         descricao: "Aprenda como diversificar sua carteira e ganhar dinheiro no longo prazo.",
         imagem: "../images/Diversificacao.jpg",
         nomeprofessor: "Thiago Nigro",
-        listaaulas: ""
+        listaaulas: "Clique aqui para acessar as aulas."
     }
 ]
-
-module.exports = cursos;
+//module.exports = cursos;

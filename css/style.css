@@ -45,10 +45,12 @@ nav a{
     color: #356059;
     font-weight: bold;
 }
-nav .active a, nav a:hover{
+nav a:hover{
     background-color: #ffe9c0;
     color: #ffad01;
+    cursor: pointer;
 }
+
 #banner {
     display: flex;
     justify-content: center;
@@ -58,4 +60,124 @@ nav .active a, nav a:hover{
     /*Essa funcao serve para preenchher todo o espaco com a imagem mesmo se o monitor for grande*/
     background-size: cover;
     height: 670px;
+    flex-direction: column;
+
+}
+
+
+#container__principal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+
+#container__criar {
+    display: none;
+}
+
+
+#container__exibir {
+    display: none;
+}
+
+
+#container__atualizar {
+    display: none;
+}
+
+
+#container__deletar {
+    display: none;
+}
+
+
+#container__listar {
+    display: none;
+    font-size: 50px;
+}
+
+
+
+.banner__box {
+    height: 300px;
+    width: 250px;
+    background-color: #70b59d;
+    opacity: 0.8;
+    margin-top: 20px;
+    flex-direction: column;
+}
+.box__index {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+.box__title {
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+}
+.box__description {
+    height: 30%;
+    margin: 5px;
+    color: black;
+    font-size: 20px;
+}
+.box__footer {
+    display: flex;
+    flex-direction: row;
+    height: 45%;
+}
+.footer__image {
+    width: 50%;
+    height: 104.2%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer__image img {
+    width: 95%;
+    height: 95%;
+}
+.footer__piece {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.piece__nome {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: #ffad01;
+}
+.piece__aula {
+    height: 50%;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    background-color: wheat;
+}
+.piece__aula a {
+    font-weight: bold;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+
 }
