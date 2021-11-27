@@ -43,3 +43,20 @@ const atualizarCurso = (idatt, tituloatt, descricaoatt, imagematt, nomeprofessor
 
 //console.table(cursos);
 
+const deletarCurso = (iddel) => {
+    const idDel = iddel - 1;
+    cursos.splice(idDel, 1);
+};
+
+//deletarCurso(3);
+
+//console.table(cursos);
+
+const listarCursos = () => {
+    cursos.sort();
+    console.table(cursos);
+};
+
+listarCursos();
+
+console.log(listarCursos);

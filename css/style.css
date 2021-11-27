@@ -1,0 +1,61 @@
+* {
+    font-family: 'Pangolin', cursive;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #ffad01;
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.imglogo {
+    height: 80px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+nav ul,
+nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    display: flex;
+}
+nav a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #356059;
+    font-weight: bold;
+}
+nav .active a, nav a:hover{
+    background-color: #ffe9c0;
+    color: #ffad01;
+}
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/banner.jpg');
+    /*Esse comando alinha a imagem no centro da tela*/
+    background-position: center;
+    /*Essa funcao serve para preenchher todo o espaco com a imagem mesmo se o monitor for grande*/
+    background-size: cover;
+    height: 670px;
+}
