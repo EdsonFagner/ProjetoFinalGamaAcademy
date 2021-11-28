@@ -1,0 +1,74 @@
+#container__criar{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#form__criar {
+    width: 35%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 5px black;
+    background-color: #70b59d;
+    opacity: 0.9;
+    padding: 0;
+}
+
+#h1__criar {
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 15px;
+    padding: 0;
+    font-weight: bolder;
+}
+
+.criar__title, .criar__description, .criar__name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.criar__input__title, .criar__input__description, .criar__input__name {
+    height: 68%;
+    width: 95%;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    box-shadow: 0px 0px 5px #AAA;
+    text-align: center;
+}
+
+.btn--criar {
+    height: 50px;
+    width: 150px;
+    /*border-radius: 75px;*/
+    background-color: #356059;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    color: white;
+    box-shadow: 0px 0px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #CCC;
+}
+
+.btn--criar:hover {
+    cursor:pointer;
+    background-color: #70b59d;
+    color: black;
+}
