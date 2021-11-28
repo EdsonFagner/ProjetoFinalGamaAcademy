@@ -41,60 +41,66 @@
                 <form method="POST" id="form__criar">
                     <h1 id="h1__criar">CRIAR UM CURSO</h1>
                     <label class="criar__title">
-                        <input class="criar__input__title" type="text" name="titulo" placeholder="TÍTULO DO CURSO" autocomplete="off" required/>
+                        <input class="criar__input__title" id="criar__input__title" type="text" name="titulo" placeholder="TÍTULO DO CURSO" autocomplete="off" required/>
                     </label>
                     <label class="criar__description">
-                        <input class="criar__input__description" type="text" name="descricao" placeholder="DESCRIÇÃO" autocomplete="off" required/>
+                        <input class="criar__input__description" id="criar__input__description" type="text" name="descricao" placeholder="DESCRIÇÃO" autocomplete="off" required/>
                     </label>
                     <!--<input accept="image/x-png,image/gif,image/jpeg" required="" type="file" name="photos[]" id="photos"  directory="" webkitdirectory="" mozdirectory="">-->
                     <label class="criar__name">
-                        <input class="criar__input__name" type="text" name="nomeprofessor" placeholder="NOME DO PROFESSOR" autocomplete="off" required/>
+                        <input class="criar__input__name" id="criar__input__name" type="text" name="nomeprofessor" placeholder="NOME DO PROFESSOR" autocomplete="off" required/>
                     </label>
-                    <button type="submit" class="btn--criar">Criar</button>
+                    <button type="submit" id="btn--cri" class="btn--criar">Criar</button>
                 </form>
             </div>
             <div class="container" id="container__exibir">
                 <form method="POST" id="form__exibir">
                     <h1 id="h1__exibir">EXIBIR DETALHES DO CURSO</h1>
                     <label class="exibir__id">
-                        <input class="exibir__input__id" type="number" name="id" placeholder="ID DO CURSO" autocomplete="off" required/>
+                        <input class="exibir__input__id" id="exibir__input__id" type="number" name="id" placeholder="ID DO CURSO" autocomplete="off" required/>
                     </label>
-                    <button type="submit" class="btn--exibir">Exibir</button>
+                    <button type="submit" id="btn--exi" class="btn--exibir">Exibir</button>
                 </form>
+                <div id="container__exibir2">
+                    
+                </div>
             </div>
             <div class="container" id="container__atualizar">
                 <form method="POST" id="form__atualizar">
                     <h1 id="h1__atualizar">ATUALIZAR UM CURSO</h1>
                     <label class="atualizar__id">
-                        <input class="atualizar__input__id" type="number" name="id" placeholder="ID DO CURSO" autocomplete="off" required/>
+                        <input class="atualizar__input__id" id="atualizar__input__id" type="number" name="id" placeholder="ID DO CURSO" autocomplete="off" required/>
                     </label>
                     <label class="atualizar__title">
-                        <input class="atualizar__input__title" type="text" name="titulo" placeholder="TÍTULO DO CURSO" autocomplete="off" required/>
+                        <input class="atualizar__input__title" id="atualizar__input__title" type="text" name="titulo" placeholder="TÍTULO DO CURSO" autocomplete="off" required/>
                     </label>
                     <label class="atualizar__description">
-                        <input class="atualizar__input__description" type="text" name="descricao" placeholder="DESCRIÇÃO" autocomplete="off" required/>
+                        <input class="atualizar__input__description" id="atualizar__input__description" type="text" name="descricao" placeholder="DESCRIÇÃO" autocomplete="off" required/>
                     </label>
                     <!--<input accept="image/x-png,image/gif,image/jpeg" required="" type="file" name="photos[]" id="photos"  directory="" webkitdirectory="" mozdirectory="">-->
                     <label class="atualizar__name">
-                        <input class="atualizar__input__name" type="text" name="nomeprofessor" placeholder="NOME DO PROFESSOR" autocomplete="off" required/>
+                        <input class="atualizar__input__name" id="atualizar__input__name" type="text" name="nomeprofessor" placeholder="NOME DO PROFESSOR" autocomplete="off" required/>
                     </label>
-                    <button type="submit" class="btn--atualizar">Atualizar</button>
+                    <button type="submit" id="btn--atua" class="btn--atualizar">Atualizar</button>
                 </form>
             </div>
             <div class="container" id="container__deletar">
                 <form method="POST" id="form__deletar">
                     <h1 id="h1__deletar">DELETAR UM CURSO</h1>
                     <label class="deletar__id">
-                        <input class="deletar__input__id" type="number" name="id" placeholder="ID DO CURSO" autocomplete="off" required/>
+                        <input id="deletar__input__id" class="deletar__input__id" type="number" name="id" placeholder="ID DO CURSO" autocomplete="off" required/>
                     </label>
-                    <button type="submit" class="btn--deletar">Deletar</button>
+                    <button type="submit" id="btn--del" class="btn--deletar">Deletar</button>
                 </form>
             </div>
             <div class="container" id="container__listar">
                 <form method="POST" id="form__listar">
                     <h1 id="h1__listar">LISTAR TODOS OS CURSOS</h1>
-                    <button type="submit" class="btn--listar">Listar</button>
+                    <button type="submit" id="btn--lis" class="btn--listar">Listar</button>
                 </form>
+                <div id="container__listar2">
+
+                </div>
             </div>
         </section>
         <aside>
