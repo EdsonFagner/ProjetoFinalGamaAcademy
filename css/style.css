@@ -1,5 +1,6 @@
 * {
     font-family: 'Pangolin', cursive;
+    box-sizing: border-box;
 }
 body {
     margin: 0;
@@ -66,7 +67,7 @@ nav a:hover{
 
 
 #container__principal {
-    display: none;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -97,13 +98,13 @@ nav a:hover{
 
 
 #container__listar {
-    display: flex;
+    display: none;
 }
 
 
 
 .banner__box {
-    height: 300px;
+    height: 325px;
     width: 250px;
     background-color: #70b59d;
     opacity: 0.8;
@@ -111,7 +112,7 @@ nav a:hover{
     flex-direction: column;
 }
 .box__index {
-    height: 10%;
+    height: 8%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,7 +122,7 @@ nav a:hover{
     background-color: black;
 }
 .box__title {
-    height: 15%;
+    height: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,7 +132,7 @@ nav a:hover{
     background-color: white;
 }
 .box__description {
-    height: 30%;
+    height: 28%;
     margin: 5px;
     color: black;
     font-size: 20px;
@@ -139,11 +140,11 @@ nav a:hover{
 .box__footer {
     display: flex;
     flex-direction: row;
-    height: 45%;
+    height: 40%;
 }
 .footer__image {
     width: 50%;
-    height: 104.2%;
+    height: 100%;
     background-color: black;
     display: flex;
     align-items: center;
@@ -163,13 +164,13 @@ nav a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     font-weight: bold;
     background-color: #ffad01;
 }
 .piece__aula {
     height: 50%;
     display: flex;
-    padding: 20px;
     justify-content: center;
     background-color: wheat;
 }
@@ -179,4 +180,24 @@ nav a:hover{
     text-decoration: underline;
     cursor: pointer;
 
+}
+
+.footer__dateCreate{
+    height: 4%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 3px;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footer__dateModify{
+    height: 4%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 3px;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
 }
